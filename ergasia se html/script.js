@@ -10,3 +10,5 @@ function login() {
       alert("Please enter valid credentials.");
     }
   }
+/*all this folder is a school project*/
+/*απο νικ δε φρικ*/
