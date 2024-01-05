@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Main Page</title>
+</head>
+<body>
+
+  <div class="welcome-container">
+    <h2>Welcome</h2>
+    <p id="welcomeMessage"></p>
+    <p>
+      Ουρές μικρών και μετριοπαθών θεωρητικών έχουν αναλύσει τη φύση του υπερανθρώπου, 
+      όπως τον περιέγραψε ο Νίτσε. Ένα από τα σημαντικά έργα του που ασχολείται με το θέμα 
+      είναι το "Ουτοπία των Φρονίμων" (Also sprach Zarathustra). 
+      Εδώ είναι ένα απόσπασμα που σχετίζεται με τον υπεράνθρωπο:
+
+      "Εγώ σας διδάσκω τον υπεράνθρωπο. Ο άνθρωπος είναι κάτι που πρέπει να υπερπηδήσει.
+      Τι έχετε κάνει για να υπερπηδήσετε τον άνθρωπο; Όλα τα ζώα έχουν προκύψει προς χάριν 
+      ενός σκοπού, αλλά ο άνθρωπος είναι ένας κλάδος, ένας ανθοστάτης κορμός.
+      Τίποτα δεν είναι ακόμα τελειωτικό στον άνθρωπο. Αλλά εγώ σας καλώ να ξεπεράσετε τον 
+      άνθρωπο."
+
+      Σε αυτό το απόσπασμα, ο Νίτσε επισημαίνει την ανάγκη για τον υπεράνθρωπο, 
+      έναν οντολογικά υψηλότερο τύπο ανθρώπου που ξεπερνά τα συνηθισμένα περιορισμούς και 
+      επιδιώκει την υψηλότερη εξέλιξη του εαυτού του.
+
+    </p>
+    <a href="linkp.html"> click me</a>
+  </div>
+
+  <script>
+    var queryString = window.location.search;
+    var urlParams = new URLSearchParams(queryString);
+    var username = urlParams.get('username');
+    
+    if (username) {
+      document.getElementById("welcomeMessage").innerText = "Welcome, " + decodeURIComponent(username) + "!";
+    } else {
+      window.location.href = "login.html";
+    }
+  </script>
+
+</body>
+</html>

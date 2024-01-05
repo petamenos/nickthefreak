@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link page</title>
+</head>
+<body>
+   
+    <h1>auto einai ena link</h1>
+    <button onclick="toggleDarkMode()"> Dark Mode</button><br>
+    <label for="font-color">Αλλαγή Χρώματος Γραμματοσειράς:</label>
+    <input type="color" id="font-color" onchange="changeFontColor(this.value)"><br>
+<div>
+    <label for="textInput">allagh periexomenou:</label>
+    <input type="text" id="textInput" placeholder="type something">
+    <div id="dynamicText"><p>Βεβαίως, εδώ είναι ένα ακόμη απόσπασμα από τον Νίτσε, αυτή τη 
+        φορά από το έργο "Έτσι Μίλησε ο Ζαρατούστρα":
+
+        "Γίνετε ο εαυτός σας! Οποιοσδήποτε μπορεί να γίνει ο εαυτός του και να αποφύγει να 
+        γίνει άλλος. Τι σημαίνει να γίνεις ο εαυτός σου; Σημαίνει να πας τον δρόμο που πας 
+        ολότελα και χωρίς να παρασυρθείς. Ο άλλος, όποιος κι αν είναι, παρασέρνει πάντα. 
+        Ο εαυτός σας μπορεί να ακολουθήσει μόνο το δρόμο του εαυτού του, 
+        και γι' αυτό δεν μπορείτε να χάσετε τον δρόμο σας."
+        
+        Σε αυτό το απόσπασμα, ο Νίτσε επισημαίνει τη σημασία του 
+        να είμαστε πιστοί στον εαυτό μας και να ακολουθούμε τον δρόμο μας, 
+        ανεξάρτητα από τις επιρροές των άλλων.</p></div>
+</div>
+<script>
+let counter = 0;    
+const arr = ['black', 'white'];
+function toggleDarkMode() {
+    document.body.style.backgroundColor = arr[counter%arr.length];
+    document.body.style.color = arr[(counter+1)%arr.length];
+    counter++
+}
+function changeFontColor(value) {
+    document.body.style.color = value;
+}
+
+const dynamicText = document.getElementById('dynamicText');
+textInput.addEventListener('input', () => {
+        dynamicText.innerText = textInput.value;
+    });
+</script>
+</body>
+</html>
