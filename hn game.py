@@ -27,3 +27,4 @@ for arithmoi in range (0, 100+1):
 print("ekanes " + str(cnt) + (" prospatheies"))
 
 #it's just a game nothing serious
+#nickthefreak
