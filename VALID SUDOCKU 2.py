@@ -69,4 +69,5 @@ sudoku_board = [
 ]
 result = isValidSudoku(sudoku_board)
 print(result)
-
+# school project 
+# by nickthe freak
