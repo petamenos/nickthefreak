@@ -22,44 +22,43 @@ int main()
 	
 	    switch(choise)
 		{
-			 case 1:
-		   	    
+			case 1:   
 		        printf("give your amount of deposit: \n");
 				scanf("%d",&dep);	
-		        if(dep>5)
+		     if(dep>5)
 				{
 					
-		        tposo += +dep;
-		        tposo++;
-		        printf("deposit completed!\n");
-		        printf("your new balance is: %d\n", tposo);
-		        printf("press -1 if you want to quit");
-		        scanf("%d",&quit);
-		        break;
-		        } 
-		    case 2:
-		    	printf("give the amount of your withdraw: \n");
-		    	scanf("%d",&with);
-		        if(with<20)
-		        {
-		    	printf("your remaining balance is: %d", tposo);
-		    	printf("you cant withdraw!\n");
-		    	break;
-		    	}
-		    	else if(with>=20)
-			    {
+		              tposo += +dep;
+		              tposo++;
+		              printf("deposit completed!\n");
+		              printf("your new balance is: %d\n", tposo);
+		              printf("press -1 if you want to quit");
+		              scanf("%d",&quit);
+		              break;
+		               } 
+		       case 2:
+		    	       printf("give the amount of your withdraw: \n");
+		    	       scanf("%d",&with);
+		       if(with<20)
+		               {
+		    	        printf("your remaining balance is: %d", tposo);
+		    	        printf("you cant withdraw!\n");
+		    	        break;
+		    	       }
+		       else if(with>=20)
+			       {
 				tposo=dep-with;
 				printf("your remaining balance is: %d\n", tposo);
 				printf("press -1 if you want to quit");
-		        scanf("%d",&quit);
+		                scanf("%d",&quit);
 				break;
-			    }
-		    case 3:
-			     printf("your remainng balance is: %d\n", tposo);
-				 break;
+			       }
+		        case 3:
+			        printf("your remainng balance is: %d\n", tposo);
+				break;
 			    
-	   }
-	}   
+	      }
+       }   
 return 0;	   
 }
 		
