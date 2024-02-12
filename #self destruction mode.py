@@ -11,7 +11,7 @@ elif choise == "no":
 while choise != "no" and choise == "yes":  
     for second in range(10, 0, -1):
         print(f"diadikasia autokatastrofhs se {second}")
-        time.sleep(1)#eisagwgh payshs enos deyteroleptoy
+        time.sleep(1)#pause for 1 second
     print("boom!!!")   
     break
 print("!!!!!")
