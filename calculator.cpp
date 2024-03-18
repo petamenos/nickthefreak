@@ -1,4 +1,5 @@
 #include <stdio.h>
+//calculator for beginers
 #include <math.h>
 int main()
 {   
@@ -17,25 +18,22 @@ int main()
  switch(oper)
  {
  	case 1:
- 		result = number1 + number2;
- 		printf("the reult is: %.2f + %.2f = %.2f", number1, number2, result);
- 	    break ;
+ 	     result = number1 + number2;
+ 	     printf("the reult is: %.2f + %.2f = %.2f", number1, number2, result);
+ 	     break ;
 	case 2:
-		result = number1 - number2;
- 		printf("the reult is: %.2f - %.2f = %.2f", number1, number2, result);
- 	    break ;	
-    case 3:
-    	result = number1 * number2;
- 		printf("the reult is: %.2f * %.2f = %.2f", number1, number2, result);
- 	    break ;	
-    case 4:
-    	result = number1 / number2;
- 		printf("the reult is: %.2f / %.2f = %.2f", number1, number2, result);
- 	    break ;	
+	     result = number1 - number2;
+ 	     printf("the reult is: %.2f - %.2f = %.2f", number1, number2, result);
+ 	     break ;	
+        case 3:
+    	      result = number1 * number2;
+ 	      printf("the reult is: %.2f * %.2f = %.2f", number1, number2, result);
+ 	      break ;	
+        case 4:
+    	      result = number1 / number2;
+ 	      printf("the reult is: %.2f / %.2f = %.2f", number1, number2, result);
+ 	      break ;	
   	
  }
 return 0;
- 
-    
-	
 }
