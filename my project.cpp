@@ -5,7 +5,7 @@ int main()
 	
 	int dep, with;
    	int tposo=0;
-    int choise, quit = -1;
+        int choise, quit = -1;
 	while(choise != -1){
 	
 	printf("WELCOME!");
